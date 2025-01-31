@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"> <!-- To samo tło co w poprzednich aktywnościach -->
+
+    <!-- Duży napis "Nie żyjesz" na środku -->
+    <TextView
+        android:id="@+id/gameOverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Nie żyjesz"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"/>
+
+    <!-- Przycisk "Zagraj jeszcze raz" -->
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Zagraj jeszcze raz"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_silver_glow"
+        android:layout_below="@id/gameOverText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"/>
+
+    <!-- Przycisk "Menu" -->
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Menu"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_dark_glow"
+        android:layout_below="@id/btn_play_again"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

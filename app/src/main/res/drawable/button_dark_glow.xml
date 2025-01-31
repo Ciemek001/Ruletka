@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#333333"/> <!-- Kolor tła -->
+    <corners android:radius="30dp"/> <!-- Zaokrąglone krawędzie -->
+    <stroke android:width="2dp" android:color="#000000"/> <!-- Obramowanie -->
+    <gradient
+        android:startColor="#555555"
+        android:endColor="#222222"
+        android:angle="45"/> <!-- Poświata -->
+</shape>

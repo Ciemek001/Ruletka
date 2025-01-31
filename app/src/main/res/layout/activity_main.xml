@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"> <!-- To samo tło co w poprzednich aktywnościach -->
 
+    <!-- Licznik rund w lewym górnym rogu -->
+    <TextView
+        android:id="@+id/roundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runda: 0"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Bęben rewolweru na środku -->
     <ImageView
         android:id="@+id/revolverImage"
         android:layout_width="200dp"
@@ -11,29 +27,43 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
 
-    <Button
-        android:id="@+id/spinButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Obróć bęben"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/revolverImage"/>
-
+    <!-- Przycisk Strzał -->
     <Button
         android:id="@+id/shootButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
         android:text="Strzał"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_crimson_glow"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/spinButton"/>
+        android:layout_below="@id/revolverImage"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Przycisk Obróć bęben -->
+    <Button
+        android:id="@+id/spinButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Obróć bęben"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_dark_glow"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shootButton"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Przycisk Powrót do menu -->
     <Button
         android:id="@+id/backToMenuButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="Powrót do menu"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_dark_glow"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/shootButton"/>
+        android:layout_below="@id/spinButton"
+        android:layout_marginTop="180dp"/>
+
 </RelativeLayout>
